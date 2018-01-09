@@ -4,6 +4,8 @@ import java.io.Serializable;
 import java.util.Date;
 
 import javax.persistence.Embeddable;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 
 @Embeddable
 public class FilmSessionId implements Serializable {
@@ -13,6 +15,7 @@ public class FilmSessionId implements Serializable {
 	private static final long serialVersionUID = 1L;
 	private int filmId;
 	private int salleId;
+	@Temporal(TemporalType.DATE)
 	private Date dateOfSession;
 
 	public FilmSessionId() {

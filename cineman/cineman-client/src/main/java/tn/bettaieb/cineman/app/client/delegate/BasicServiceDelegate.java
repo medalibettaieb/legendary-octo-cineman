@@ -3,6 +3,8 @@ package tn.bettaieb.cineman.app.client.delegate;
 import java.util.Date;
 
 import tn.bettaieb.cineman.app.client.locator.ServiceLocator;
+import tn.bettaieb.cineman.entities.Cinema;
+import tn.bettaieb.cineman.entities.User;
 import tn.bettaieb.cineman.services.basic.CinemaServiceRemote;
 import tn.bettaieb.cineman.services.basic.FilmServiceRemote;
 import tn.bettaieb.cineman.services.basic.SalleServiceRemote;
@@ -33,9 +35,19 @@ public class BasicServiceDelegate {
 		return (FilmServiceRemote) ServiceLocator.getInstance().getProxy(jndiNameFilmService);
 
 	}
-	
-	public static void openFilmSession(int filmId, int salleId, Date dateOfSession, String description, int nbPlaces, float price) {
+
+	public static void openFilmSession(int filmId, int salleId, Date dateOfSession, String description, int nbPlaces,
+			float price) {
 		getProxyOnCinemaServiceRemote().openFilmSession(filmId, salleId, dateOfSession, description, nbPlaces, price);
-		
+
 	}
+
+	public static User findUserById(int code) {
+		return getProxyOnUserServiceRemote().find(code);
+	}
+
+	public static Cinema findCinemaById(int id) {
+		return getProxyOnCinemaServiceRemote().find(id);
+	}
+
 }

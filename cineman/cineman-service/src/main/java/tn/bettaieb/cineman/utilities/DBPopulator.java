@@ -9,6 +9,7 @@ import javax.ejb.Singleton;
 import javax.ejb.Startup;
 
 import tn.bettaieb.cineman.entities.Cinema;
+import tn.bettaieb.cineman.entities.Customer;
 import tn.bettaieb.cineman.entities.Film;
 import tn.bettaieb.cineman.entities.Salle;
 import tn.bettaieb.cineman.services.basic.CinemaServiceLocal;
@@ -54,6 +55,10 @@ public class DBPopulator {
 
 		cinema2.linkSallesToThisCinema(salles2);
 
+		Customer customer = new Customer();
+		customer.setName("daly");
+
+		userServiceLocal.update(customer);
 		cinemaServiceLocal.update(cinema);
 		cinemaServiceLocal.update(cinema2);
 

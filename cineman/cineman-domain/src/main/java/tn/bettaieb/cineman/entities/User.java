@@ -22,7 +22,7 @@ public class User implements Serializable {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "USR_CODE")
-	private Long code;
+	private int code;
 	@Column(name = "USR_NAME")
 	private String name;
 	@Column(name = "USR_LOGIN")
@@ -37,11 +37,11 @@ public class User implements Serializable {
 
 	@OneToOne
 	private FidalityCard fidalityCard;
-	public Long getCode() {
+	public int getCode() {
 		return code;
 	}
 
-	public void setCode(Long code) {
+	public void setCode(int code) {
 		this.code = code;
 	}
 
