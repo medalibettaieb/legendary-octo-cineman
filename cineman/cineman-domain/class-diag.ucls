@@ -2,309 +2,790 @@
 <class-diagram version="1.1.14" icons="true" automaticImage="PNG" always-add-relationships="false" 
   generalizations="true" realizations="true" associations="true" dependencies="false" nesting-relationships="true" 
   router="FAN">  
-  <enumeration id="1" language="java" name="tn.bettaieb.cineman.entities.FilmVersion" project="cineman-domain" 
+  <package id="1" language="java" name="tn.bettaieb.cineman.services.basic" project="cineman-service" 
+    file="/cineman-service/src/main/java/tn/bettaieb/cineman/services/basic" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="377" width="1595" x="9" y="11"/>    
+    <display autosize="false" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <class id="2" language="java" name="tn.bettaieb.cineman.services.basic.UserService" project="cineman-service" 
+    file="/cineman-service/src/main/java/tn/bettaieb/cineman/services/basic/UserService.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="220" y="211"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <interface id="3" language="java" name="tn.bettaieb.cineman.services.basic.CinemaServiceLocal" 
+    project="cineman-service" 
+    file="/cineman-service/src/main/java/tn/bettaieb/cineman/services/basic/CinemaServiceLocal.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="58" width="156" x="1212" y="302"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </interface>  
+  <interface id="4" language="java" name="tn.bettaieb.cineman.services.basic.FilmServiceLocal" project="cineman-service" 
+    file="/cineman-service/src/main/java/tn/bettaieb/cineman/services/basic/FilmServiceLocal.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="58" width="156" x="820" y="302"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </interface>  
+  <interface id="5" language="java" name="tn.bettaieb.cineman.services.basic.UserServiceRemote" 
+    project="cineman-service" 
+    file="/cineman-service/src/main/java/tn/bettaieb/cineman/services/basic/UserServiceRemote.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="58" width="156" x="36" y="302"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </interface>  
+  <class id="6" language="java" name="tn.bettaieb.cineman.services.basic.SalleService" project="cineman-service" 
+    file="/cineman-service/src/main/java/tn/bettaieb/cineman/services/basic/SalleService.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="58" width="156" x="820" y="186"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <interface id="7" language="java" name="tn.bettaieb.cineman.services.basic.FilmServiceRemote" 
+    project="cineman-service" 
+    file="/cineman-service/src/main/java/tn/bettaieb/cineman/services/basic/FilmServiceRemote.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="58" width="156" x="428" y="302"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </interface>  
+  <interface id="8" language="java" name="tn.bettaieb.cineman.services.basic.SalleServiceLocal" 
+    project="cineman-service" 
+    file="/cineman-service/src/main/java/tn/bettaieb/cineman/services/basic/SalleServiceLocal.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="58" width="156" x="1016" y="302"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </interface>  
+  <interface id="9" language="java" name="tn.bettaieb.cineman.services.basic.SalleServiceRemote" 
+    project="cineman-service" 
+    file="/cineman-service/src/main/java/tn/bettaieb/cineman/services/basic/SalleServiceRemote.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="58" width="156" x="624" y="302"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </interface>  
+  <interface id="10" language="java" name="tn.bettaieb.cineman.services.basic.CinemaServiceRemote" 
+    project="cineman-service" 
+    file="/cineman-service/src/main/java/tn/bettaieb/cineman/services/basic/CinemaServiceRemote.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="58" width="156" x="1408" y="302"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </interface>  
+  <class id="11" language="java" name="tn.bettaieb.cineman.services.basic.FilmService" project="cineman-service" 
+    file="/cineman-service/src/main/java/tn/bettaieb/cineman/services/basic/FilmService.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="58" width="156" x="624" y="186"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <interface id="12" language="java" name="tn.bettaieb.cineman.services.basic.UserServiceLocal" 
+    project="cineman-service" 
+    file="/cineman-service/src/main/java/tn/bettaieb/cineman/services/basic/UserServiceLocal.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="58" width="156" x="232" y="302"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </interface>  
+  <class id="13" language="java" name="tn.bettaieb.cineman.services.basic.CinemaService" project="cineman-service" 
+    file="/cineman-service/src/main/java/tn/bettaieb/cineman/services/basic/CinemaService.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="76" width="168" x="1114" y="186"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <package id="14" language="java" name="tn.bettaieb.cineman.services.business" project="cineman-service" 
+    file="/cineman-service/src/main/java/tn/bettaieb/cineman/services/business" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="279" width="1014" x="10" y="402"/>    
+    <display autosize="false" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <class id="15" language="java" name="tn.bettaieb.cineman.services.business.BookingService" project="cineman-service" 
+    file="/cineman-service/src/main/java/tn/bettaieb/cineman/services/business/BookingService.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="290" y="529"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="16" language="java" name="tn.bettaieb.cineman.services.business.ReportingService" project="cineman-service" 
+    file="/cineman-service/src/main/java/tn/bettaieb/cineman/services/business/ReportingService.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="712" y="529"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <interface id="17" language="java" name="tn.bettaieb.cineman.services.business.ReportingServiceLocal" 
+    project="cineman-service" 
+    file="/cineman-service/src/main/java/tn/bettaieb/cineman/services/business/ReportingServiceLocal.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="606" y="636"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </interface>  
+  <interface id="18" language="java" name="tn.bettaieb.cineman.services.business.ReportingServiceRemote" 
+    project="cineman-service" 
+    file="/cineman-service/src/main/java/tn/bettaieb/cineman/services/business/ReportingServiceRemote.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="817" y="636"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </interface>  
+  <interface id="19" language="java" name="tn.bettaieb.cineman.services.business.BookingServiceLocal" 
+    project="cineman-service" 
+    file="/cineman-service/src/main/java/tn/bettaieb/cineman/services/business/BookingServiceLocal.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="184" y="636"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </interface>  
+  <interface id="20" language="java" name="tn.bettaieb.cineman.services.business.BookingServiceRemote" 
+    project="cineman-service" 
+    file="/cineman-service/src/main/java/tn/bettaieb/cineman/services/business/BookingServiceRemote.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="395" y="636"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </interface>  
+  <package id="21" language="java" name="tn.bettaieb.cineman.utilities" project="cineman-service" 
+    file="/cineman-service/src/main/java/tn/bettaieb/cineman/utilities" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="202" width="476" x="1085" y="470"/>    
+    <display autosize="false" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <class id="22" language="java" name="tn.bettaieb.cineman.utilities.GenericDAO" project="cineman-service" 
+    file="/cineman-service/src/main/java/tn/bettaieb/cineman/utilities/GenericDAO.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1160" y="604"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="23" language="java" name="tn.bettaieb.cineman.utilities.DBPopulator" project="cineman-service" 
+    file="/cineman-service/src/main/java/tn/bettaieb/cineman/utilities/DBPopulator.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1398" y="634"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <interface id="24" language="java" name="tn.bettaieb.cineman.utilities.IGenericDAO" project="cineman-service" 
+    file="/cineman-service/src/main/java/tn/bettaieb/cineman/utilities/IGenericDAO.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1496" y="560"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </interface>  
+  <package id="25" language="java" name="tn.bettaieb.cineman.entities" project="cineman-domain" 
+    file="/cineman-domain/src/main/java/tn/bettaieb/cineman/entities" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="924" width="1429" x="14" y="693"/>    
+    <display autosize="false" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <enumeration id="26" language="java" name="tn.bettaieb.cineman.entities.FilmVersion" project="cineman-domain" 
     file="/cineman-domain/src/main/java/tn/bettaieb/cineman/entities/FilmVersion.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="53" width="125" x="541" y="-50"/>    
+    <position height="94" width="125" x="156" y="710"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
-      <attributes public="false" package="false" protected="false" private="false" static="false"/>      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="false" package="false" protected="false" private="false" static="false"/>    
     </display>  
   </enumeration>  
-  <class id="2" language="java" name="tn.bettaieb.cineman.entities.BookingDetailId" project="cineman-domain" 
+  <class id="27" language="java" name="tn.bettaieb.cineman.entities.BookingDetailId" project="cineman-domain" 
     file="/cineman-domain/src/main/java/tn/bettaieb/cineman/entities/BookingDetailId.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="53" width="125" x="603" y="136"/>    
+    <position height="148" width="131" x="210" y="1032"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
-      <attributes public="false" package="false" protected="false" private="false" static="false"/>      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="false" package="false" protected="false" private="false" static="false"/>    
     </display>  
   </class>  
-  <class id="3" language="java" name="tn.bettaieb.cineman.entities.Film" project="cineman-domain" 
+  <class id="28" language="java" name="tn.bettaieb.cineman.entities.Film" project="cineman-domain" 
     file="/cineman-domain/src/main/java/tn/bettaieb/cineman/entities/Film.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="53" width="125" x="1079" y="229"/>    
+    <position height="166" width="131" x="755" y="1238"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
-      <attributes public="false" package="false" protected="false" private="false" static="false"/>      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="false" package="false" protected="false" private="false" static="false"/>    
     </display>  
   </class>  
-  <class id="4" language="java" name="tn.bettaieb.cineman.entities.User" project="cineman-domain" 
+  <class id="29" language="java" name="tn.bettaieb.cineman.entities.User" project="cineman-domain" 
     file="/cineman-domain/src/main/java/tn/bettaieb/cineman/entities/User.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="53" width="125" x="438" y="136"/>    
+    <position height="166" width="131" x="39" y="1032"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
-      <attributes public="false" package="false" protected="false" private="false" static="false"/>      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="false" package="false" protected="false" private="false" static="false"/>    
     </display>  
   </class>  
-  <class id="5" language="java" name="tn.bettaieb.cineman.entities.FilmSession" project="cineman-domain" 
+  <class id="30" language="java" name="tn.bettaieb.cineman.entities.FilmSession" project="cineman-domain" 
     file="/cineman-domain/src/main/java/tn/bettaieb/cineman/entities/FilmSession.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="53" width="125" x="933" y="136"/>    
+    <position height="130" width="131" x="603" y="1032"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
-      <attributes public="false" package="false" protected="false" private="false" static="false"/>      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="false" package="false" protected="false" private="false" static="false"/>    
     </display>  
   </class>  
-  <class id="6" language="java" name="tn.bettaieb.cineman.entities.FidalityCard" project="cineman-domain" 
+  <class id="31" language="java" name="tn.bettaieb.cineman.entities.FidalityCard" project="cineman-domain" 
     file="/cineman-domain/src/main/java/tn/bettaieb/cineman/entities/FidalityCard.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="53" width="125" x="438" y="43"/>    
+    <position height="112" width="131" x="39" y="862"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
-      <attributes public="false" package="false" protected="false" private="false" static="false"/>      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="false" package="false" protected="false" private="false" static="false"/>    
     </display>  
   </class>  
-  <class id="7" language="java" name="tn.bettaieb.cineman.entities.Agent" project="cineman-domain" 
+  <class id="32" language="java" name="tn.bettaieb.cineman.entities.Agent" project="cineman-domain" 
     file="/cineman-domain/src/main/java/tn/bettaieb/cineman/entities/Agent.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="53" width="125" x="438" y="229"/>    
+    <position height="94" width="131" x="39" y="1238"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
-      <attributes public="false" package="false" protected="false" private="false" static="false"/>      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="false" package="false" protected="false" private="false" static="false"/>    
     </display>  
   </class>  
-  <enumeration id="8" language="java" name="tn.bettaieb.cineman.entities.PaymentMethod" project="cineman-domain" 
+  <enumeration id="33" language="java" name="tn.bettaieb.cineman.entities.PaymentMethod" project="cineman-domain" 
     file="/cineman-domain/src/main/java/tn/bettaieb/cineman/entities/PaymentMethod.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="53" width="125" x="768" y="136"/>    
+    <position height="94" width="182" x="381" y="1032"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
-      <attributes public="false" package="false" protected="false" private="false" static="false"/>      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="false" package="false" protected="false" private="false" static="false"/>    
     </display>  
   </enumeration>  
-  <enumeration id="9" language="java" name="tn.bettaieb.cineman.entities.FilmCategory" project="cineman-domain" 
+  <enumeration id="34" language="java" name="tn.bettaieb.cineman.entities.FilmCategory" project="cineman-domain" 
     file="/cineman-domain/src/main/java/tn/bettaieb/cineman/entities/FilmCategory.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="53" width="125" x="1079" y="322"/>    
+    <position height="112" width="132" x="754" y="1444"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
-      <attributes public="false" package="false" protected="false" private="false" static="false"/>      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="false" package="false" protected="false" private="false" static="false"/>    
     </display>  
   </enumeration>  
-  <enumeration id="10" language="java" name="tn.bettaieb.cineman.entities.FilmEquipement" project="cineman-domain" 
+  <enumeration id="35" language="java" name="tn.bettaieb.cineman.entities.FilmEquipement" project="cineman-domain" 
     file="/cineman-domain/src/main/java/tn/bettaieb/cineman/entities/FilmEquipement.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="53" width="125" x="810" y="-50"/>    
+    <position height="-1" width="-1" x="392" y="762"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
-      <attributes public="false" package="false" protected="false" private="false" static="false"/>      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="false" package="false" protected="false" private="false" static="false"/>    
     </display>  
   </enumeration>  
-  <class id="11" language="java" name="tn.bettaieb.cineman.entities.Customer" project="cineman-domain" 
+  <class id="36" language="java" name="tn.bettaieb.cineman.entities.Customer" project="cineman-domain" 
     file="/cineman-domain/src/main/java/tn/bettaieb/cineman/entities/Customer.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="53" width="125" x="603" y="229"/>    
+    <position height="94" width="131" x="210" y="1238"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
-      <attributes public="false" package="false" protected="false" private="false" static="false"/>      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="false" package="false" protected="false" private="false" static="false"/>    
     </display>  
   </class>  
-  <class id="12" language="java" name="tn.bettaieb.cineman.entities.FilmSessionId" project="cineman-domain" 
+  <class id="37" language="java" name="tn.bettaieb.cineman.entities.FilmSessionId" project="cineman-domain" 
     file="/cineman-domain/src/main/java/tn/bettaieb/cineman/entities/FilmSessionId.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="53" width="125" x="914" y="229"/>    
+    <position height="130" width="131" x="584" y="1238"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
-      <attributes public="false" package="false" protected="false" private="false" static="false"/>      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="false" package="false" protected="false" private="false" static="false"/>    
     </display>  
   </class>  
-  <class id="13" language="java" name="tn.bettaieb.cineman.entities.BookingDetail" project="cineman-domain" 
+  <class id="38" language="java" name="tn.bettaieb.cineman.entities.BookingDetail" project="cineman-domain" 
     file="/cineman-domain/src/main/java/tn/bettaieb/cineman/entities/BookingDetail.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="53" width="125" x="685" y="43"/>    
+    <position height="130" width="131" x="312" y="862"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
-      <attributes public="false" package="false" protected="false" private="false" static="false"/>      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="false" package="false" protected="false" private="false" static="false"/>    
     </display>  
   </class>  
-  <class id="14" language="java" name="tn.bettaieb.cineman.entities.Salle" project="cineman-domain" 
+  <class id="39" language="java" name="tn.bettaieb.cineman.entities.Salle" project="cineman-domain" 
     file="/cineman-domain/src/main/java/tn/bettaieb/cineman/entities/Salle.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="53" width="125" x="933" y="43"/>    
+    <position height="112" width="131" x="603" y="862"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
-      <attributes public="false" package="false" protected="false" private="false" static="false"/>      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="false" package="false" protected="false" private="false" static="false"/>    
     </display>  
   </class>  
-  <class id="15" language="java" name="tn.bettaieb.cineman.entities.Cinema" project="cineman-domain" 
+  <class id="40" language="java" name="tn.bettaieb.cineman.entities.Cinema" project="cineman-domain" 
     file="/cineman-domain/src/main/java/tn/bettaieb/cineman/entities/Cinema.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="53" width="125" x="1079" y="-50"/>    
+    <position height="-1" width="-1" x="1035" y="804"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
-      <attributes public="false" package="false" protected="false" private="false" static="false"/>      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="false" package="false" protected="false" private="false" static="false"/>    
     </display>  
   </class>  
-  <association id="16">    
-    <end type="SOURCE" refId="3" navigable="false">      
-      <attribute id="17" name="filmCategory"/>      
-      <multiplicity id="18" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="9" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="19">    
-    <end type="SOURCE" refId="3" navigable="false">      
-      <attribute id="20" name="filmSessions"/>      
-      <multiplicity id="21" minimum="0" maximum="2147483647"/>    
-    </end>    
-    <end type="TARGET" refId="5" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <generalization id="22">    
-    <end type="SOURCE" refId="7"/>    
-    <end type="TARGET" refId="4"/>  
+  <generalization id="41">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="22"/>  
   </generalization>  
-  <association id="23">    
-    <end type="SOURCE" refId="5" navigable="false">      
-      <attribute id="24" name="bookingDetails"/>      
-      <multiplicity id="25" minimum="0" maximum="2147483647"/>    
+  <generalization id="42">    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="22"/>  
+  </generalization>  
+  <association id="43">    
+    <end type="SOURCE" refId="30" navigable="false">      
+      <attribute id="44" name="filmSessionId">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="45" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
     </end>    
-    <end type="TARGET" refId="13" navigable="true"/>    
+    <end type="TARGET" refId="37" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="26">    
-    <end type="SOURCE" refId="15" navigable="false">      
-      <attribute id="27" name="salles"/>      
-      <multiplicity id="28" minimum="0" maximum="2147483647"/>    
+  <generalization id="46">    
+    <end type="SOURCE" refId="13"/>    
+    <end type="TARGET" refId="22"/>  
+  </generalization>  
+  <association id="47">    
+    <end type="SOURCE" refId="28" navigable="false">      
+      <attribute id="48" name="filmCategory">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="49" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
     </end>    
-    <end type="TARGET" refId="14" navigable="true"/>    
+    <end type="TARGET" refId="34" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="29">    
-    <end type="SOURCE" refId="5" navigable="false">      
-      <attribute id="30" name="film"/>      
-      <multiplicity id="31" minimum="0" maximum="1"/>    
+  <generalization id="50">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="22"/>  
+  </generalization>  
+  <association id="51">    
+    <bendpoint x="785" y="1032"/>    
+    <bendpoint x="785" y="862"/>    
+    <end type="SOURCE" refId="28" navigable="false">      
+      <attribute id="52" name="premiereCinema">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="53" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
     </end>    
-    <end type="TARGET" refId="3" navigable="true"/>    
+    <end type="TARGET" refId="40" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="32">    
-    <end type="SOURCE" refId="6" navigable="false">      
-      <attribute id="33" name="client"/>      
-      <multiplicity id="34" minimum="0" maximum="1"/>    
+  <association id="54">    
+    <end type="SOURCE" refId="40" navigable="false">      
+      <attribute id="55" name="salles">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="56" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="39" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="57">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="24"/>  
+  </generalization>  
+  <realization id="58">    
+    <end type="SOURCE" refId="16"/>    
+    <end type="TARGET" refId="18"/>  
+  </realization>  
+  <realization id="59">    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="4"/>  
+  </realization>  
+  <association id="60">    
+    <end type="SOURCE" refId="31" navigable="false">      
+      <attribute id="61" name="client">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="62" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="29" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="63">    
+    <end type="SOURCE" refId="28" navigable="false">      
+      <attribute id="64" name="filmSessions">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="65" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="30" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="66">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="24"/>  
+  </generalization>  
+  <association id="67">    
+    <end type="SOURCE" refId="30" navigable="false">      
+      <attribute id="68" name="salle">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="69" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="39" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="70">    
+    <end type="SOURCE" refId="16"/>    
+    <end type="TARGET" refId="17"/>  
+  </realization>  
+  <generalization id="71">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="24"/>  
+  </generalization>  
+  <association id="72">    
+    <end type="SOURCE" refId="13" navigable="false">      
+      <attribute id="73" name="filmServiceLocal">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="74" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
     </end>    
     <end type="TARGET" refId="4" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="35">    
-    <end type="SOURCE" refId="4" navigable="false">      
-      <attribute id="36" name="bookingDetails"/>      
-      <multiplicity id="37" minimum="0" maximum="2147483647"/>    
+  <association id="75">    
+    <bendpoint x="764" y="862"/>    
+    <bendpoint x="764" y="1032"/>    
+    <end type="SOURCE" refId="40" navigable="false">      
+      <attribute id="76" name="premiereFilms">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="77" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
     </end>    
-    <end type="TARGET" refId="13" navigable="true"/>    
+    <end type="TARGET" refId="28" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="38">    
-    <bendpoint x="1109" y="136"/>    
-    <bendpoint x="1109" y="43"/>    
-    <end type="SOURCE" refId="3" navigable="false">      
-      <attribute id="39" name="premiereCinema"/>      
-      <multiplicity id="40" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="15" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="41">    
-    <end type="SOURCE" refId="4" navigable="false">      
-      <attribute id="42" name="fidalityCard"/>      
-      <multiplicity id="43" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="6" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="44">    
-    <end type="SOURCE" refId="5" navigable="false">      
-      <attribute id="45" name="salle"/>      
-      <multiplicity id="46" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="14" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="47">    
-    <end type="SOURCE" refId="13" navigable="false">      
-      <attribute id="48" name="filmSession"/>      
-      <multiplicity id="49" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="5" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="50">    
-    <end type="SOURCE" refId="14" navigable="false">      
-      <attribute id="51" name="filmSessions"/>      
-      <multiplicity id="52" minimum="0" maximum="2147483647"/>    
-    </end>    
-    <end type="TARGET" refId="5" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="53">    
-    <end type="SOURCE" refId="13" navigable="false">      
-      <attribute id="54" name="paymentMethod"/>      
-      <multiplicity id="55" minimum="0" maximum="1"/>    
+  <association id="78">    
+    <end type="SOURCE" refId="23" navigable="false">      
+      <attribute id="79" name="salleServiceLocal">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="80" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
     </end>    
     <end type="TARGET" refId="8" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="56">    
-    <end type="SOURCE" refId="13" navigable="false">      
-      <attribute id="57" name="client"/>      
-      <multiplicity id="58" minimum="0" maximum="1"/>    
+  <generalization id="81">    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="24"/>  
+  </generalization>  
+  <association id="82">    
+    <end type="SOURCE" refId="38" navigable="false">      
+      <attribute id="83" name="bookingDetailId">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="84" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
     </end>    
-    <end type="TARGET" refId="4" navigable="true"/>    
+    <end type="TARGET" refId="27" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="59">    
-    <end type="SOURCE" refId="13" navigable="false">      
-      <attribute id="60" name="bookingDetailId"/>      
-      <multiplicity id="61" minimum="0" maximum="1"/>    
+  <association id="85">    
+    <end type="SOURCE" refId="38" navigable="false">      
+      <attribute id="86" name="paymentMethod">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="87" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
     </end>    
-    <end type="TARGET" refId="2" navigable="true"/>    
+    <end type="TARGET" refId="33" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="62">    
-    <end type="SOURCE" refId="5" navigable="false">      
-      <attribute id="63" name="filmSessionId"/>      
-      <multiplicity id="64" minimum="0" maximum="1"/>    
+  <association id="88">    
+    <end type="SOURCE" refId="30" navigable="false">      
+      <attribute id="89" name="film">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="90" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
     </end>    
-    <end type="TARGET" refId="12" navigable="true"/>    
+    <end type="TARGET" refId="28" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="65">    
-    <bendpoint x="1088" y="43"/>    
-    <bendpoint x="1088" y="136"/>    
-    <end type="SOURCE" refId="15" navigable="false">      
-      <attribute id="66" name="premiereFilms"/>      
-      <multiplicity id="67" minimum="0" maximum="2147483647"/>    
+  <association id="91">    
+    <end type="SOURCE" refId="38" navigable="false">      
+      <attribute id="92" name="client">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="93" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="29" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="94">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="8"/>  
+  </realization>  
+  <realization id="95">    
+    <end type="SOURCE" refId="15"/>    
+    <end type="TARGET" refId="20"/>  
+  </realization>  
+  <association id="96">    
+    <end type="SOURCE" refId="38" navigable="false">      
+      <attribute id="97" name="filmSession">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="98" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="30" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="99">    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="7"/>  
+  </realization>  
+  <generalization id="100">    
+    <end type="SOURCE" refId="32"/>    
+    <end type="TARGET" refId="29"/>  
+  </generalization>  
+  <realization id="101">    
+    <end type="SOURCE" refId="13"/>    
+    <end type="TARGET" refId="10"/>  
+  </realization>  
+  <association id="102">    
+    <end type="SOURCE" refId="29" navigable="false">      
+      <attribute id="103" name="fidalityCard">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="104" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="31" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="105">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="24"/>  
+  </generalization>  
+  <realization id="106">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="5"/>  
+  </realization>  
+  <generalization id="107">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="24"/>  
+  </generalization>  
+  <association id="108">    
+    <end type="SOURCE" refId="29" navigable="false">      
+      <attribute id="109" name="bookingDetails">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="110" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="38" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="111">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="24"/>  
+  </generalization>  
+  <realization id="112">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="12"/>  
+  </realization>  
+  <realization id="113">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="9"/>  
+  </realization>  
+  <realization id="114">    
+    <end type="SOURCE" refId="15"/>    
+    <end type="TARGET" refId="19"/>  
+  </realization>  
+  <association id="115">    
+    <end type="SOURCE" refId="39" navigable="false">      
+      <attribute id="116" name="cinema">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="117" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="40" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="118">    
+    <end type="SOURCE" refId="36"/>    
+    <end type="TARGET" refId="29"/>  
+  </generalization>  
+  <association id="119">    
+    <end type="SOURCE" refId="23" navigable="false">      
+      <attribute id="120" name="cinemaServiceLocal">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="121" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
     </end>    
     <end type="TARGET" refId="3" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <generalization id="68">    
-    <end type="SOURCE" refId="11"/>    
-    <end type="TARGET" refId="4"/>  
-  </generalization>  
-  <association id="69">    
-    <end type="SOURCE" refId="14" navigable="false">      
-      <attribute id="70" name="cinema"/>      
-      <multiplicity id="71" minimum="0" maximum="1"/>    
+  <association id="122">    
+    <end type="SOURCE" refId="30" navigable="false">      
+      <attribute id="123" name="bookingDetails">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="124" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
     </end>    
-    <end type="TARGET" refId="15" navigable="true"/>    
+    <end type="TARGET" refId="38" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="125">    
+    <end type="SOURCE" refId="23" navigable="false">      
+      <attribute id="126" name="userServiceLocal">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="127" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="12" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="128">    
+    <end type="SOURCE" refId="13"/>    
+    <end type="TARGET" refId="3"/>  
+  </realization>  
+  <association id="129">    
+    <end type="SOURCE" refId="39" navigable="false">      
+      <attribute id="130" name="filmSessions">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="131" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="30" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="132">    
+    <end type="SOURCE" refId="13" navigable="false">      
+      <attribute id="133" name="salleServiceLocal">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="134" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="8" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="135">    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="24"/>  
+  </generalization>  
+  <association id="136">    
+    <end type="SOURCE" refId="23" navigable="false">      
+      <attribute id="137" name="filmServiceLocal">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="138" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="4" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
     sort-features="false" accessors="true" visibility="true">    
-    <attributes public="false" package="false" protected="false" private="false" static="false"/>    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
     <operations public="false" package="false" protected="false" private="false" static="false"/>  
   </classifier-display>  
   <association-display labels="true" multiplicity="true"/>
